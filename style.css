@@ -18,6 +18,7 @@
   --lato: lato, cronos-pro, zeitung-mono, sans-serif;
   --zeitung: zeitung-mono, cronos-pro, lato, sans-serif;
 }
+
 body,
 html,
 main,
@@ -27,9 +28,11 @@ p {
   margin: 0;
   padding: 0;
 }
+
 .bold-text {
   font-weight: bold;
 }
+
 .italic-text {
   font-style: italic;
 }
@@ -42,17 +45,20 @@ p {
   align-items: center;
   background: var(--paper);
 }
+
 .header__logo-anchor {
   fill: var(--coffee);
   border: solid var(--paper) 2px;
   border-radius: 6px;
 }
+
 .header__logo-anchor:hover,
 .header__logo-anchor:focus {
   fill: var(--cobalt);
   border: solid var(--coffee) 2px;
   border-radius: 6px;
 }
+
 .header__logo {
   width: 260px;
   padding: 10px;
@@ -81,12 +87,6 @@ p {
   padding: 0 2vw;
 }
 
-.Nav__slash {
-  transform: skew(-20deg);
-  margin: 0 0.5vw;
-  width: 2px;
-  background: var(--coffee);
-}
 
 .Nav__anchor:hover,
 .Nav__anchor:focus {
@@ -99,11 +99,16 @@ p {
   color: rgb(255, 255, 255);
 }
 
+.Nav__slash {
+  transform: skew(-20deg);
+  margin: 0 0.5vw;
+  width: 2px;
+  background: var(--coffee);
+}
+
 .main__page-1-section-1 {
-  background: linear-gradient(
-      rgba(123, 158, 129, 0.3),
-      rgba(123, 158, 129, 0.3)
-    ),
+  background: linear-gradient(rgba(123, 158, 129, 0.3),
+      rgba(123, 158, 129, 0.3)),
     url(./assets/main-pic-1.jpg);
   background-position-x: center;
   background-position: bottom;
@@ -112,6 +117,7 @@ p {
   height: 60vh;
   text-align: right;
 }
+
 .main__page-1-section-1-h2,
 .main__page-2-section-1-h2,
 .main__page-3-section-1-h2,
@@ -129,6 +135,7 @@ p {
   align-items: flex-end;
   justify-content: space-between;
 }
+
 .motto {
   padding: 100px 0 0 100px;
   font-family: var(--zeitung);
@@ -151,6 +158,7 @@ p {
   color: var(--paper);
   letter-spacing: 3px;
 }
+
 .down-arrow {
   transform-origin: center;
   transform: rotate(45deg);
@@ -163,9 +171,11 @@ p {
 .main__page-2 {
   background: var(--yellow);
 }
+
 .main__page-3 {
   background: var(--orange);
 }
+
 .main__page-4 {
   background: var(--paarl);
 }
@@ -210,34 +220,132 @@ p {
   background: var(--silver);
 }
 
+.footer__container {
+  padding: 50px 0 30px 0;
+  font-family: var(--zeitung);
+  background: var(--paper);
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.footer-logo__anchor {
+  fill: var(--coffee);
+  border: solid var(--paper) 2px;
+  border-radius: 6px;
+}
+
+.footer-logo__anchor:hover,
+.footer-logo__anchor:focus {
+  fill: var(--cobalt);
+  border: solid var(--black) 2px;
+  border-radius: 6px;
+}
+
+.footer__anchor {
+  color: var(--coffee);
+}
+
+.footer__anchor-box {
+  transform: skew(-20deg);
+  display: flex;
+}
+
+.footer__anchor-text {
+  transform: skew(20deg);
+  margin: 0;
+  padding: 0 2vw;
+}
+
+.footer__anchor:hover,
+.footer__anchor:focus {
+  background: var(--cobalt);
+  text-decoration: none;
+}
+
+.footer__anchor-box .footer__anchor:hover,
+.footer__anchor-box .footer__anchor:focus {
+  color: rgb(255, 255, 255);
+}
+
+.footer__button {
+  font-family: zeitung-mono, lato-light, cronos-pro, sans-serif;
+  text-decoration: none;
+  color: #e5e6e5;
+  text-align: center;
+  padding: 20px 40px;
+  background: rgba(65, 104, 172, 1);
+  border: solid 4px rgba(0, 0, 0, 0)
+}
+
+.footer__button:hover {
+  color: var(--coffee);
+  background: rgba(65, 104, 172, 0.6);
+  border: solid 4px var(--coffee);
+}
+
+.SocialLinks__logo {
+  height: 30px;
+  margin: 8px;
+  fill: var(--coffee);
+  border: 2px solid var(--paper);
+  border-radius: 4px;
+  padding: 3px;
+}
+
+.SocialLinks__logo:hover {
+  fill: var(--cobalt);
+  border: 2px solid black;
+}
+
+.footer__social-anchor {
+  text-decoration: none;
+}
+
 @media (max-width: 575.98px) {
   .header__container {
     display: flex;
     flex-direction: column;
   }
+
   .header-logo {
     width: 340px;
     margin: 10px;
   }
+
   .Nav__container {
     justify-content: start;
   }
+
   .Nav__anchor-text {
     font-size: 20px;
   }
+
   .Nav__slash {
     display: none;
   }
+
   .main__page-1 {
     height: 200%;
   }
+
   .main__page-1-section-2 {
     display: flex;
     flex-direction: column;
   }
+
   .motto {
     padding: 0;
   }
+
   .get-updates__iframe {
     width: 100%;
     height: 500px;
@@ -252,9 +360,7 @@ p {
 }
 
 /* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
-}
+@media (max-width: 991.98px) {}
 
 /* // Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
-}
+@media (max-width: 1199.98px) {}
